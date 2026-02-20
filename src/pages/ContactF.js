@@ -19,8 +19,7 @@ const ContactF = () => {
         <div className="col-md-6 mb-4">
           <h5>📞 Phone</h5>
           <p>
-            +91 98765 43210<br />
-            +91 91234 56789
+            +91 7330846473<br />
           </p>
         </div>
 

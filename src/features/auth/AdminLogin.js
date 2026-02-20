@@ -16,7 +16,7 @@ const AdminLogin = () => {
 
      const { email, password } = details
 
-     if (email === 'admin@fz.com' && password === 'admin') {
+     if (email === 'adminfz@gmail.com' && password === 'admin') {
         setLogin(true)
         navigate('/dashboard')
      } else {
