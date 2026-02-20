@@ -1,0 +1,161 @@
+/* aside {
+    text-align: center;
+    border-right: 1px solid gray;
+    padding: 50px 20px;
+}
+aside button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+} */
+
+/* aside {
+    text-align: center;
+    border-right: 1px gray;
+    padding: 50px 20px;
+}
+
+aside button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+.banner1,
+.banner2,
+.banner3{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+
+}
+
+.banner1 {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.306)), url("./Fitzen/Assets2/banner4.jpg");
+}
+.banner2 {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.306)), url("./Fitzen/Assets2/banner5.jpg");
+}
+.banner3 {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.306)), url("./Fitzen/Assets2/banner6.jpg");
+}
+
+.banner1,
+.banner2,
+.banner3 h1,h3 {
+    font-weight: 900;
+    text-align: center;
+
+
+}
+
+header {
+    border-bottom: 1px solid gray ;
+}
+
+form p {
+    color: red;
+    padding: 0px 10px;
+}
+
+@media(max-width:768px) {
+
+    .banner1,
+    .banner2,
+    .banner3 {
+        height: 90vh;
+    }
+} */
+
+aside {
+    text-align: center;
+    border-right: 1px gray;
+    padding: 50px 20px;
+}
+
+aside button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.banner1,
+.banner2,
+.banner3{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+}
+
+.banner1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.306)), 
+    url("/public/Assets2/banner4.jpg");
+}
+
+.banner2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.306)), 
+    url("/public/Assets2/banner5.jpg");
+}
+
+.banner3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.306)), 
+    url("/public/Assets2/banner6.jpg");
+}
+
+.banner1,
+.banner2,
+.banner3 h1,h3 {
+    font-weight: 900;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid gray ;
+}
+
+form p {
+    color: red;
+    padding: 0px 10px;
+}
+
+@media(max-width:768px) {
+    .banner1,
+    .banner2,
+    .banner3 {
+        height: 90vh;
+    }
+}
+
+
+
+
+
+
+
+
+/* @media(max-width:768px) {
+
+    .banner4,
+    .banner5,
+    .banner6 {
+        height: 90vh;
+    }
+} */
