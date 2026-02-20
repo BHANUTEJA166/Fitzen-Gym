@@ -41,7 +41,7 @@ const FooterF = () => {
           <div className="col-md-4 mb-4">
             <h5>Contact</h5>
             <p>Email: support@fitzen.com</p>
-            <p>Phone: +91 9876543210</p>
+            <p>Phone: +91 7330846473</p>
 
             <div className="social-icons">
               <i className="bi bi-facebook"></i>
