@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
-import axios from 'axios';
+import axios from 'axios'
+import { BASE_URL } from '../config/api'
 
 const useCallApi = (api) => {
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        axios.get(`http://localhost:5000/${api}`)
-        .then((res) => setData(res.data))
-        .catch((err) => console.log(err));
-}, [api]);
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    axios.get(`${BASE_URL}/${api}`)
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err))
+  }, [api])
+
   return data
 }
 

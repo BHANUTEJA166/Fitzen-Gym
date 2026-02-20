@@ -1,21 +1,25 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { getSchedules } from '../services/fzService'
 
 const Schedules = () => {
-  const[data, setData] = useState(null)
-  const[error, setError] = useState("")
+
+  const [data, setData] = useState(null)
+  const [error, setError] = useState("")
+
   useEffect(() => {
-    axios.get(`http://localhost:5000/Schedules`)
-    .then((res) => setData(res.data))
-    .catch((err) => {
-      setError(err.message);
-    })
-  },[])
+    getSchedules()
+      .then((res) => setData(res.data))
+      .catch((err) => {
+        setError(err.message)
+      })
+  }, [])
+
   if (error) {
-     return <p> {error} </p>
+    return <p>{error}</p>
   }
-  if(!data){
-    return <p> Loading... </p>
+
+  if (!data) {
+    return <p>Loading...</p>
   }
 
   return (
@@ -42,27 +46,23 @@ const Schedules = () => {
               </tr>
             </thead>
             <tbody>
-             {data.map((schedule,index) => {
-                return(
+              {data.map((schedule, index) => {
+                return (
                   <tr key={index}>
-                   <td>{schedule.class}</td>
-                   <td>{schedule.time}</td>
-                   <td>{schedule.day}</td>
-                   <td>{schedule.trainer}</td>
-                   <td>{schedule.status}</td>
+                    <td>{schedule.class}</td>
+                    <td>{schedule.time}</td>
+                    <td>{schedule.day}</td>
+                    <td>{schedule.trainer}</td>
+                    <td>{schedule.status}</td>
                   </tr>
                 )
-              })
-             }
+              })}
             </tbody>
           </table>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Schedules;
-
-// const [data, setData] = useState(null);   // API data not loaded yet
-// const [error, setError] = useState("");   // error message text
+export default Schedules
